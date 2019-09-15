@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/school_authentication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".LoginAuthentication">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:text="Skoo"
+        android:textSize="52sp" />
+
+    <EditText
+        android:id="@+id/school_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="학교 이메일을 입력하세요"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/password"
+        android:layout_marginBottom="32dp"
+        android:inputType="textEmailAddress"
+
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력하세요"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/send_email"
+        android:layout_marginBottom="128dp"
+        android:inputType="textPassword"
+
+        />
+
+    <Button
+        android:id="@+id/send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인증하기"
+        android:background="@drawable/rounded_button"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="64dp"/>
+
+    <Button
+        android:id="@+id/verify_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:background="@drawable/rounded_button"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="64dp"/>
+
+
+
+
+
+
+</RelativeLayout>

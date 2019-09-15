@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "849002897057",
+    "firebase_url": "https://skoo-a518d.firebaseio.com",
+    "project_id": "skoo-a518d",
+    "storage_bucket": "skoo-a518d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849002897057:android:e253d9220660249a",
+        "android_client_info": {
+          "package_name": "com.steve.skoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849002897057-uc8a19lg8oe2096filsfqrv2arfii121.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.steve.skoo",
+            "certificate_hash": "7774d413afcec2f4bf31b415f5df8f179211fa80"
+          }
+        },
+        {
+          "client_id": "849002897057-uijn5ta7um03qa4n1i87rv6f8oha0b3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEn5nqaRU_CBn-0nJIZ0ILXaw66-4FvgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849002897057-uijn5ta7um03qa4n1i87rv6f8oha0b3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

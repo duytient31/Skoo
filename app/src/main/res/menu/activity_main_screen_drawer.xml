@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/clock"
+            android:title="이용 기록" />
+        <item
+            android:id="@+id/nav_add_friend"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="친구 초대" />
+        <item
+            android:id="@+id/nav_howto"
+            android:icon="@drawable/book"
+            android:title="이용 방법" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="고객 지원"/>
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="공지 사항" />
+
+    </group>
+
+    <item android:title="설정">
+        <menu>
+
+            <item
+                android:id="@+id/nav_card"
+                android:icon="@drawable/ic_credit_card_black_24dp"
+                android:title="카드 관리" />
+
+            <item
+                android:id="@+id/nav_coupons"
+                android:icon="@drawable/coupon"
+                android:title="쿠폰함" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="설정" />
+        </menu>
+    </item>
+
+</menu>

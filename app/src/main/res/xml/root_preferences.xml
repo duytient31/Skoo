@@ -1,0 +1,84 @@
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="애플리케이션 정보"
+        app:layout="@layout/preferences_category">
+
+        <Preference
+            app:title="버전 alpha 1.0.0"
+            app:key="terms_conditions"
+            app:summary="현재 최신 버전을 사용중입니다"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="서비스 정보"
+        app:layout="@layout/preferences_category">
+
+        <Preference
+            app:title="서비스 이용약관"
+            app:key="TAC"
+            app:selectable="true"
+            />
+
+        <Preference
+            app:title="위치기반 서비스 이용약관"
+            app:key="locationTAC"
+            app:selectable="true"
+            />
+
+        <Preference
+            app:title="개인정보 취급 방침"
+            app:key="userInfoTAC"
+            app:selectable="true"
+            />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="마케팅 수신 동의 설정"
+        app:layout="@layout/preferences_category">
+
+        <SwitchPreferenceCompat
+            app:key="push"
+            app:title="마케팅 수신 동의하시겠습니까?"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on" />
+
+        <SwitchPreferenceCompat
+            app:key="email"
+            app:title="이메일"
+            
+            app:dependency="push"/>
+
+        <SwitchPreferenceCompat
+            app:key="sms"
+            app:title="SMS"
+            app:dependency="push"/>
+
+        <SwitchPreferenceCompat
+            app:dependency="push"
+            app:key="alarm"
+            app:title="푸시 알림" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="회원 관리"
+        app:layout="@layout/preferences_category">
+
+        <Preference
+            app:title="로그아웃"
+            app:key="logout"
+            app:selectable="true"
+            />
+
+        <Preference
+            app:title="회원탈퇴"
+            app:key="delUser"
+            app:selectable="true"
+            />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

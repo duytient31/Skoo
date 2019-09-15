@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/scan_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/camera_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:theme="@style/ToolbarTheme"
+        android:fitsSystemWindows="true">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/camera_toolbar"/>
+
+    <Button
+        android:id="@+id/enter_QR_code"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/rounded_button"
+        android:drawableLeft="@drawable/ic_keyboard_black_24dp"
+        android:text="코드 직접 입력"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        />
+
+    <ToggleButton
+        android:id="@+id/turn_on_flashlight"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="손전등"
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_flash_on_black_24dp"
+        android:paddingStart="8dp"
+        />
+
+
+</RelativeLayout>

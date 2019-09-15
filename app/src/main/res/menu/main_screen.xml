@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/issue_return"
+        android:orderInCategory="100"
+        android:title="대여/반납 이슈"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/issue_parking"
+        android:orderInCategory="100"
+        android:title="주차 이슈"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/issue_broken"
+        android:orderInCategory="100"
+        android:title="고장 신고"
+        app:showAsAction="never" />
+</menu>
